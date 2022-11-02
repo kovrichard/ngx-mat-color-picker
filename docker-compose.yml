@@ -1,0 +1,12 @@
+version: '3'
+services:
+  ngx-mat-color-picker:
+    build: ./
+    image: ngx-mat-color-picker 
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app/
+      - /usr/src/app/node_modules/
+    ports:
+      - 4200:4200
+      - 9876:9876
