@@ -1,0 +1,12 @@
+<mat-form-field [appearance]=appearance>
+    <mat-label>{{ label }}</mat-label>
+    <div class="mat-form-group" [formGroup]="form">
+        <input matInput ngDefaultControl [formControlName]=formControlName [placeholder]=placeholder>
+        <button mat-icon-button (click)="pickerVisible = !pickerVisible" cdkOverlayOrigin #trigger="cdkOverlayOrigin">
+            <mat-icon>palette</mat-icon>
+        </button>
+    </div>
+</mat-form-field>
+<ng-template cdkConnectedOverlay [cdkConnectedOverlayOrigin]="trigger" [cdkConnectedOverlayOpen]=pickerVisible [cdkConnectedOverlayHasBackdrop]=pickerVisible [cdkConnectedOverlayPositions]=positionPairs (backdropClick)="pickerVisible = !pickerVisible">
+    <chrome-picker [color]="color" (colorChange)="changeFormColor($event)" style.display="{{pickerVisible ? 'block' : 'none'}}"></chrome-picker>
+</ng-template>
