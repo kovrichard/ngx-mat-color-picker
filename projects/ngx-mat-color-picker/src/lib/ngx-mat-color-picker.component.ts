@@ -3,6 +3,7 @@ import {
   HostListener,
   Input,
   OnInit,
+  OnDestroy,
   forwardRef,
 } from '@angular/core';
 import { MatFormFieldAppearance } from '@angular/material/form-field';
@@ -12,6 +13,7 @@ import {
   NG_VALUE_ACCESSOR,
 } from '@angular/forms';
 import { ConnectionPositionPair } from '@angular/cdk/overlay';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'ngx-mat-color-picker',
@@ -26,8 +28,10 @@ import { ConnectionPositionPair } from '@angular/cdk/overlay';
   ],
 })
 export class NgxMatColorPickerComponent
-  implements OnInit, ControlValueAccessor
+  implements OnInit, OnDestroy, ControlValueAccessor
 {
+  private formSubscription: Subscription | undefined;
+
   @Input() appearance: MatFormFieldAppearance;
   @Input() label: string;
   @Input() placeholder: string;
@@ -51,13 +55,17 @@ export class NgxMatColorPickerComponent
   constructor() {}
 
   ngOnInit(): void {
-    this.form
+    this.formSubscription = this.form
       .get(this.formControlName)
       ?.valueChanges.subscribe((value: string) => {
         if (this.validColor(value)) {
           this.color = value.toUpperCase();
         }
       });
+  }
+
+  ngOnDestroy(): void {
+    if (this.formSubscription) this.formSubscription.unsubscribe();
   }
 
   onChange: any = () => {};
