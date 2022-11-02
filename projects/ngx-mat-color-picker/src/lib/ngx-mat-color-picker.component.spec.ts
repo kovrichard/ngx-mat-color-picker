@@ -8,9 +8,8 @@ describe('NgxMatColorPickerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgxMatColorPickerComponent ]
-    })
-    .compileComponents();
+      declarations: [NgxMatColorPickerComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(NgxMatColorPickerComponent);
     component = fixture.componentInstance;

@@ -9,7 +9,7 @@ module.exports = function (config) {
       require('karma-jasmine'),
       require('karma-spec-reporter'),
       require('karma-chrome-launcher'),
-      require('@angular-devkit/build-angular/plugins/karma')
+      require('@angular-devkit/build-angular/plugins/karma'),
     ],
     client: {
       jasmine: {
@@ -18,18 +18,18 @@ module.exports = function (config) {
         // for example, you can disable the random execution with `random: false`
         // or set a specific seed with `seed: 4321`
       },
-      clearContext: false // leave Jasmine Spec Runner output visible in browser
+      clearContext: false, // leave Jasmine Spec Runner output visible in browser
     },
     jasmineHtmlReporter: {
-      suppressAll: true // removes the duplicated traces
+      suppressAll: true, // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, '../../coverage/ngx-mat-color-picker'),
+      dir: require('path').join(
+        __dirname,
+        '../../coverage/ngx-mat-color-picker'
+      ),
       subdir: '.',
-      reporters: [
-        { type: 'html' },
-        { type: 'text-summary' }
-      ]
+      reporters: [{ type: 'html' }, { type: 'text-summary' }],
     },
     reporters: ['spec'],
     port: 9876,
@@ -44,11 +44,11 @@ module.exports = function (config) {
           '--disable-gpu',
           '--headless',
           '--remote-debugging-port=9222',
-        ]
-      }
+        ],
+      },
     },
     browsers: ['ChromeHeadless'],
     singleRun: true,
-    restartOnFileChange: true
+    restartOnFileChange: true,
   });
 };

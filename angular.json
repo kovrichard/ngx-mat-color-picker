@@ -31,11 +31,23 @@
             "tsConfig": "projects/ngx-mat-color-picker/tsconfig.spec.json",
             "karmaConfig": "projects/ngx-mat-color-picker/karma.conf.js"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ngx-mat-color-picker/**/*.ts",
+              "projects/ngx-mat-color-picker/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": false,
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
