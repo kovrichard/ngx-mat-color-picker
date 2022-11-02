@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxMatColorPickerComponent } from './ngx-mat-color-picker.component';
+import { ColorPickerModule } from '@iplab/ngx-color-picker';
 
 @NgModule({
   declarations: [NgxMatColorPickerComponent],
@@ -15,6 +16,7 @@ import { NgxMatColorPickerComponent } from './ngx-mat-color-picker.component';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    ColorPickerModule,
   ],
   exports: [NgxMatColorPickerComponent],
 })

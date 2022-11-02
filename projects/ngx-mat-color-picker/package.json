@@ -4,7 +4,8 @@
   "peerDependencies": {
     "@angular/common": "^14.2.0",
     "@angular/core": "^14.2.0",
-    "@angular/material": "14.2.6"
+    "@angular/material": "14.2.6",
+    "@iplab/ngx-color-picker": "^14.2.1"
   },
   "dependencies": {
     "tslib": "^2.3.0"
