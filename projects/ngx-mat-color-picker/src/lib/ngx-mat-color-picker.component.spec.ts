@@ -2,7 +2,15 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NgxMatColorPickerComponent } from './ngx-mat-color-picker.component';
 import { OverlayModule } from '@angular/cdk/overlay';
-import { FormControl, FormGroup } from '@angular/forms';
+import {
+  FormControl,
+  FormGroup,
+  FormsModule,
+  ReactiveFormsModule,
+} from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('NgxMatColorPickerComponent', () => {
   let component: NgxMatColorPickerComponent;
@@ -11,7 +19,14 @@ describe('NgxMatColorPickerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [OverlayModule],
+      imports: [
+        OverlayModule,
+        MatIconModule,
+        MatInputModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        ReactiveFormsModule,
+      ],
       declarations: [NgxMatColorPickerComponent],
     }).compileComponents();
 
