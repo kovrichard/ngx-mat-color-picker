@@ -1,24 +1,47 @@
-# NgxMatColorPicker
+# NGX Color Picker
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.0.
+Color picker for Angular reactive forms in Material Design.
 
-## Code scaffolding
+## Install
 
-Run `ng generate component component-name --project ngx-mat-color-picker` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-mat-color-picker`.
-> Note: Don't forget to add `--project ngx-mat-color-picker` or else it will be added to the default project in your `angular.json` file. 
+Install with NPM:
 
-## Build
+```
+npm install ngx-mat-color-picker --save
+```
 
-Run `ng build ngx-mat-color-picker` to build the project. The build artifacts will be stored in the `dist/` directory.
+Install with Yarn
 
-## Publishing
+```
+yarn add ngx-mat-color-picker
+```
 
-After building your library with `ng build ngx-mat-color-picker`, go to the dist folder `cd dist/ngx-mat-color-picker` and run `npm publish`.
+## Setup
 
-## Running unit tests
+Add `NgxMatColorPickerModule` to your corresponding module's imports. Usually, it will be in `app.module.ts`.
 
-Run `ng test ngx-mat-color-picker` to execute the unit tests via [Karma](https://karma-runner.github.io).
+``` ts
+...
+import { NgxMatColorPickerModule } from 'ngx-mat-color-picker';
+...
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    ...
+    NgxMatColorPickerModule,
+    ...
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
+
+When you are ready, you can use the `ngx-mat-color-picker` component in your templates.
+
+``` html
+<ngx-mat-color-picker appearance="outline" label="Background color" placeholder="This will be the color of the background" formControlName="backgroundColor" [form]=form></ngx-mat-color-picker>
+```
