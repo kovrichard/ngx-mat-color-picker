@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "eslint --resolve-plugins-relative-to . '**/*.{ts,js}' --fix && prettier --write '**/*.{ts,js}'"
+    "lint": "eslint --resolve-plugins-relative-to . '**/*.{ts,js}' --fix && prettier --write '**/*.{ts,js}'",
+    "lint-check": "eslint '**/*.{ts,js}' && prettier --check '**/*.{ts,js}'"
   },
   "private": true,
   "dependencies": {
