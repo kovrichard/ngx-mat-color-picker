@@ -31,15 +31,15 @@ jobs:
       run: |
         sudo apt update
         sudo apt install git chromium-browser
-        yarn global add @angular/cli
+        npm install -g @angular/cli
 
     - name: Install dependencies
-      run: yarn install && ng update
+      run: npm install && ng update
 
     - name: Check style
       run: |
-        yarn eslint '**/*.{ts,js}'
-        yarn prettier --check '**/*.{ts,js}'
+        npm run eslint '**/*.{ts,js}'
+        npm run prettier --check '**/*.{ts,js}'
 
     - name: Run tests
       run: yarn test
