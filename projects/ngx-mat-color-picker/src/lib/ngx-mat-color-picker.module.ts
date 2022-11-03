@@ -3,6 +3,7 @@ import { OverlayModule } from '@angular/cdk/overlay';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxMatColorPickerComponent } from './ngx-mat-color-picker.component';
 import { ColorPickerModule } from '@iplab/ngx-color-picker';
@@ -13,6 +14,7 @@ import { ColorPickerModule } from '@iplab/ngx-color-picker';
     OverlayModule,
     MatIconModule,
     MatInputModule,
+    MatButtonModule,
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
