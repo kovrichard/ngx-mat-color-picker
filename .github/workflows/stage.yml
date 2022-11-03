@@ -38,8 +38,8 @@ jobs:
 
     - name: Check style
       run: |
-        yarn eslint '**/*.ts'
-        yarn prettier --check '**/*.ts'
+        yarn eslint '**/*.{ts,js}'
+        yarn prettier --check '**/*.{ts,js}'
 
     - name: Run tests
       run: yarn test
