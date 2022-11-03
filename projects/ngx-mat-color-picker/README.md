@@ -1,5 +1,8 @@
 # NGX Color Picker
 
+![build](https://github.com/<kovrichard>/<ngx-mat-color-picker>/actions/workflows/<stage>/badge.svg)
+
+
 Color picker for Angular reactive forms in Material Design.
 
 ## Install
