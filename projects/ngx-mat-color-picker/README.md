@@ -45,3 +45,10 @@ When you are ready, you can use the `ngx-mat-color-picker` component in your tem
 ``` html
 <ngx-mat-color-picker appearance="outline" label="Background color" placeholder="This will be the color of the background" formControlName="backgroundColor" [form]=form></ngx-mat-color-picker>
 ```
+
+## Author
+
+Richard Kovacs
+
+- https://github.com/kovrichard
+- https://twitter.com/rchardkovacs
