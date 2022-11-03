@@ -38,8 +38,7 @@ jobs:
 
     - name: Check style
       run: |
-        npm run eslint '**/*.{ts,js}'
-        npm run prettier --check '**/*.{ts,js}'
+        npm run lint-check
 
     - name: Run tests
-      run: yarn test
+      run: npm test
