@@ -1,6 +1,8 @@
 # NGX Color Picker
 
-![build](https://github.com/kovrichard/ngx-mat-color-picker/actions/workflows/stage.yml/badge.svg)
+[![build](https://github.com/kovrichard/ngx-mat-color-picker/actions/workflows/stage.yml/badge.svg)](https://github.com/kovrichard/ngx-mat-color-picker/actions)
+
+[![NPM](https://nodei.co/npm/ngx-mat-color-picker.png)](https://www.npmjs.com/package/ngx-mat-color-picker)
 
 
 Color picker for Angular reactive forms in Material Design.
