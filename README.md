@@ -1,4 +1,6 @@
-# NgxMatColorPicker
+# NGX Color Picker
+
+![build](https://github.com/kovrichard/ngx-mat-color-picker/actions/workflows/stage.yml/badge.svg)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
 
