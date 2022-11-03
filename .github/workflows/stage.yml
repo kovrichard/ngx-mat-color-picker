@@ -1,4 +1,4 @@
-name: Node.js CI
+name: test
 
 on:
   push:
@@ -15,17 +15,10 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Use Node.js 16.x
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
-        node-version: 16.x
-
-    - name: Load cache
-      uses: actions/cache@v2
-      with:
-        path: ~/.yarn
-        key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
+        node-version: 16
+        cache: 'npm'
 
     - name: Install environment
       run: |
