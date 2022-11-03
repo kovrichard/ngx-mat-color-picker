@@ -1,6 +1,7 @@
 {
   "name": "ngx-mat-color-picker",
-  "version": "0.0.2",
+  "description": "Add color picker input fields to your reactive form, using Material Design",
+  "version": "0.0.3",
   "peerDependencies": {
     "@angular/common": "^14.2.0",
     "@angular/core": "^14.2.0",
@@ -9,5 +10,24 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "keywords": [
+    "angular",
+    "ngx",
+    "color",
+    "picker",
+    "color-picker",
+    "ngx-color-picker",
+    "material",
+    "design",
+    "material-design",
+    "reactive",
+    "form",
+    "reactive-forms",
+    "input"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kovrichard/ngx-mat-color-picker"
   }
 }
