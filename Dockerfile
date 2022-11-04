@@ -10,5 +10,3 @@ COPY ./ ./usr/src/app/
 WORKDIR /usr/src/app/
 
 RUN npm install && ng update
-
-CMD ["sleep", "100000000"]
