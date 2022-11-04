@@ -1,5 +1,6 @@
 # NGX Color Picker
 
+[![downloads](https://img.shields.io/npm/dm/ngx-mat-color-picker.svg)](https://www.npmjs.com/package/ngx-mat-color-picker)
 [![build](https://github.com/kovrichard/ngx-mat-color-picker/actions/workflows/stage.yml/badge.svg)](https://github.com/kovrichard/ngx-mat-color-picker/actions)
 
 [![NPM](https://nodei.co/npm/ngx-mat-color-picker.png)](https://www.npmjs.com/package/ngx-mat-color-picker)
