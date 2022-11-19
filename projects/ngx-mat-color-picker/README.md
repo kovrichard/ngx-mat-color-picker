@@ -49,7 +49,7 @@ export class AppModule {}
 When you are ready, you can use the `ngx-mat-color-picker` component in your templates.
 
 ``` html
-<ngx-mat-color-picker appearance="outline" label="Background color" placeholder="This will be the color of the background" formControlName="backgroundColor" [form]=form></ngx-mat-color-picker>
+<ngx-mat-color-picker appearance="outline" color="accent" label="Background color" placeholder="This will be the color of the background" formControlName="backgroundColor" [form]=form></ngx-mat-color-picker>
 ```
 
 ## Author
