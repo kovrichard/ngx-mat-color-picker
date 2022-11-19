@@ -50,7 +50,7 @@ export class NgxMatColorPickerComponent
     },
   ];
 
-  color = '#FFFFFF';
+  chosenColor = '#FFFFFF';
   pickerVisible = false;
 
   constructor() {}
@@ -60,7 +60,7 @@ export class NgxMatColorPickerComponent
       .get(this.formControlName)
       ?.valueChanges.subscribe((value: string) => {
         if (this.validColor(value)) {
-          this.color = value.toUpperCase();
+          this.chosenColor = value.toUpperCase();
         }
       });
   }
@@ -74,7 +74,7 @@ export class NgxMatColorPickerComponent
   onTouched: any = () => {};
 
   writeValue(color: string) {
-    this.color = color;
+    this.chosenColor = color;
   }
 
   registerOnChange(fn: any) {

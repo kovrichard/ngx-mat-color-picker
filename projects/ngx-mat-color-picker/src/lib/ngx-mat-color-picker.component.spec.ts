@@ -43,7 +43,7 @@ describe('NgxMatColorPickerComponent', () => {
   });
 
   it('default color should be white', () => {
-    expect(component.color).toEqual('#FFFFFF');
+    expect(component.chosenColor).toEqual('#FFFFFF');
   });
 
   it('color picker should be closed by default', () => {
@@ -53,13 +53,13 @@ describe('NgxMatColorPickerComponent', () => {
   it('color should change when input color changes', () => {
     component.changeFormColor('#abcabc');
 
-    expect(component.color).toEqual('#ABCABC');
+    expect(component.chosenColor).toEqual('#ABCABC');
   });
 
   it('color should not change when input color is invalid', () => {
     component.changeFormColor('#xxyyzz');
 
-    expect(component.color).toEqual('#FFFFFF');
+    expect(component.chosenColor).toEqual('#FFFFFF');
   });
 
   it('onChange should be changeable', () => {

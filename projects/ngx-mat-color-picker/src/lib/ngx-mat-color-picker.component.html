@@ -8,5 +8,5 @@
     </div>
 </mat-form-field>
 <ng-template cdkConnectedOverlay [cdkConnectedOverlayOrigin]="trigger" [cdkConnectedOverlayOpen]=pickerVisible [cdkConnectedOverlayHasBackdrop]=pickerVisible [cdkConnectedOverlayPositions]=positionPairs (backdropClick)="pickerVisible = !pickerVisible">
-    <chrome-picker [color]="color" (colorChange)="changeFormColor($event)" style.display="{{pickerVisible ? 'block' : 'none'}}"></chrome-picker>
+    <chrome-picker [color]="chosenColor" (colorChange)="changeFormColor($event)" style.display="{{pickerVisible ? 'block' : 'none'}}"></chrome-picker>
 </ng-template>
