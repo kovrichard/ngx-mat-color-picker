@@ -1,7 +1,7 @@
 {
   "name": "ngx-mat-color-picker",
   "description": "Add color picker input fields to your reactive form, using Material Design",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "peerDependencies": {
     "@angular/common": "^14.2.0",
     "@angular/core": "^14.2.0",

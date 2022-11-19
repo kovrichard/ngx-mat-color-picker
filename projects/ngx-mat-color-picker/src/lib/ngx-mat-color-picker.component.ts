@@ -33,6 +33,7 @@ export class NgxMatColorPickerComponent
   private formSubscription: Subscription | undefined;
 
   @Input() appearance: MatFormFieldAppearance;
+  @Input() formColor: string;
   @Input() label: string;
   @Input() placeholder: string;
   @Input() formControlName: string;
