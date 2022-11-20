@@ -10,7 +10,8 @@
     "lint": "eslint --resolve-plugins-relative-to . '**/*.{ts,js}' --fix && prettier --write '**/*.{ts,js}'",
     "lint-check": "eslint '**/*.{ts,js}' && prettier --check '**/*.{ts,js}'"
   },
-  "private": true,
+  "private": false,
+  "license": "MIT",
   "dependencies": {
     "@angular/animations": "^14.2.0",
     "@angular/common": "^14.2.0",
