@@ -52,6 +52,27 @@ When you are ready, you can use the `ngx-mat-color-picker` component in your tem
 <ngx-mat-color-picker appearance="outline" color="accent" label="Background color" placeholder="This will be the color of the background" formControlName="backgroundColor" [form]=form></ngx-mat-color-picker>
 ```
 
+## Repository
+
+### Bump version
+
+```
+cd projects/ngx-mat-color-picker/
+npm version major/minor/patch
+```
+
+### Build project
+
+```
+ng build ngx-mat-color-picker
+```
+
+### Publish package
+
+```
+cd dist/ngx-mat-color-picker/
+npm publish
+```
 ## Author
 
 Richard Kovacs
